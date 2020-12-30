@@ -1,0 +1,8 @@
+type andong {
+  name: String!
+  age: Int!
+}
+
+type Query {
+  person: andong!
+}

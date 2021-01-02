@@ -1,13 +1,10 @@
 
-const andong = {
-    name: "donghyun",
-    age: 21
-}
-
+import {getMovies, getById} from "./db"
 
 const resolvers = {
     Query: {
-        person: () => andong
+        movies: () => getMovies,
+        movie: (_, { id }) => getById(id)
     }
 }
 
